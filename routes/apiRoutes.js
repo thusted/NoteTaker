@@ -10,9 +10,9 @@ module.exports = function(app) {
     res.json(storedNotes);
   });
   
-  app.delete("/api/notes/:id", function(req, res) {
-    const noteId = req.params.id;
-    
-  })
+  // app.delete("/api/notes/:id", function(req, res) {
+  //   const noteId = req.params.id;
+
+  // })
     
 }
