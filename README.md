@@ -23,6 +23,8 @@ After cloning the GitHub repository to your local machine, open the project in y
 ## Usage
 To start the application, run the command "node server.js" from terminal.
 
+Click the "Get Started" button on the landing page. Enter the title and text of a note and click the save button to store it. Click the stored notes on the lefthand side to read them. Click the red trash can next to a stored note to delete.
+
 ## Contributing
 Tiana Husted
 
