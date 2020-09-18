@@ -5,8 +5,8 @@ An application that can be used to write, save, and delete notes. This applicati
 
 ## Table of Contents
 * [Description](#Description)
-* [User Story] (#User-Story)
-* [Business Context] (#Business-Context)
+* [User-Story] (#User-Story)
+* [Business-Context] (#Business-Context)
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [Contributing](#Contributing)
