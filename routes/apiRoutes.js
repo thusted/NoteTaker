@@ -1,4 +1,4 @@
-const storedNotes = require("../db/db.json");
+let storedNotes = require("../db/db.json");
 const fs = require("fs");
 
 module.exports = function(app) {
@@ -7,14 +7,24 @@ module.exports = function(app) {
   });
 
   app.post("/api/notes", function(req, res) {
-    console.log(req.body);
     storedNotes.push(req.body);
     res.json(storedNotes);
   });
   
   app.delete("/api/notes/:id", function(req, res) {
     const noteId = req.params.id;
-    console.log(noteId);
-  })
-    
+
+    //Function to filter notes
+    const filterById = (note) => {
+      if(note.id !== noteId) {
+        return true
+      }
+      return false;
+    }
+
+    //Invoke the filterById function to filter notes in the storedNotes array
+    storedNotes = storedNotes.filter(filterById);
+
+    res.json(storedNotes);
+  });   
 }
