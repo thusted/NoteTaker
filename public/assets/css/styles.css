@@ -68,3 +68,8 @@ html, body {
   padding: 20px;
   cursor: pointer;
 }
+
+#landingPageContainer {
+  background-image: url("../images/notebook.jpeg");
+  background-size: cover;
+}
